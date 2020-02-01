@@ -4,7 +4,7 @@ import fs from 'fs';
 import rimraf from 'rimraf';
 import { loadConfig, saveConfig } from './config';
 import { updateTypescriptPaths } from './modules/TypescriptPaths';
-import { createTemplate } from './modules/Template';
+import { createTemplate } from './modules/generateTemplate';
 
 //
 // Generate

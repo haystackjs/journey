@@ -27,5 +27,8 @@
         "outDir": "lib/",
         "importHelpers": false,
         "esModuleInterop": true
-    }
+    },
+    "include": [
+        "./src"
+    ]
 }

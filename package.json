@@ -6,6 +6,10 @@
     "author": "Steve Kite <steve@openland.com>",
     "license": "MIT",
     "private": true,
+    "main": "lib/main.js",
+    "bin": {
+        "journey": "bin/journey.js"
+    },
     "scripts": {
         "start": "ts-node ./src/main.ts --path ./sample/"
     },
