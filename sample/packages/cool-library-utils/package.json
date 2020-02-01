@@ -1,0 +1,7 @@
+{
+  "name": "cool-library-utils",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "dependencies": {}
+}

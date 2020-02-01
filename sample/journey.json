@@ -1,0 +1,7 @@
+{
+    "modules": [
+        "cool-library",
+        "cool-library-utils",
+        "cool-library-dev"
+    ]
+}

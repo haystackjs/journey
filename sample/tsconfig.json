@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "paths": {
+            "cool-library": [
+                "cool-library"
+            ],
+            "cool-library-utils": [
+                "cool-library-utils"
+            ],
+            "cool-library-dev": [
+                "cool-library-dev"
+            ]
+        },
+        "baseUrl": "./packages"
+    }
+}
