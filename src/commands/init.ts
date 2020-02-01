@@ -16,7 +16,9 @@ export async function doInit(root: string, name: string, version: string) {
             'react-dom': '^16.12.0',
             '@haystackjs/journey': version
         },
-        dependencies: {}
+        dependencies: {
+            'typescript': '*'
+        }
     }, null, 2));
 
     // tslint.json
