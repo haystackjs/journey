@@ -5,7 +5,7 @@ import { loadConfig } from '../config';
 import path from 'path';
 import fs from 'fs';
 
-export function startWebpackServer(root: string, name: string) {
+function loadWebpackConfig(root: string, name: string) {
     const journeyConfig = loadConfig(root);
     const aliases = {};
     for (let m of journeyConfig.modules) {
@@ -62,8 +62,12 @@ export function startWebpackServer(root: string, name: string) {
             webpackConfig = cfg.webpack(webpackConfig);
         }
     }
+    return webpackConfig;
+}
 
+export function startWebpackServer(root: string, name: string) {
     // Start Server
+    const webpackConfig = loadWebpackConfig(root, name);
     let compiler = webpack(webpackConfig);
     const devServerOptions: WebpackDevServer.Configuration = {
         open: true,
@@ -75,5 +79,13 @@ export function startWebpackServer(root: string, name: string) {
     const server = new WebpackDevServer(compiler, devServerOptions);
     server.listen(4000, '127.0.0.1', () => {
         console.log('Starting server on http://localhost:4000');
+    });
+}
+
+export function exportStatic(root: string, name: string) {
+    const webpackConfig = loadWebpackConfig(root, name);
+    let compiler = webpack(webpackConfig);
+    compiler.run(() => {
+        //
     });
 }
