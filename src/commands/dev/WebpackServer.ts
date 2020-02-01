@@ -30,7 +30,8 @@ export function startWebpackServer(root: string, name: string) {
                             cacheDirectory: true, cacheCompression: false,
                             presets: [
                                 '@babel/preset-env',
-                                '@babel/preset-react'
+                                '@babel/preset-react',
+                                '@babel/preset-typescript'
                             ],
                             plugins: [
                                 '@babel/plugin-proposal-class-properties'
@@ -38,14 +39,18 @@ export function startWebpackServer(root: string, name: string) {
                         },
                     },
                 },
+                {
+                    test: /\.css$/i,
+                    use: ['style-loader', 'css-loader'],
+                }
             ]
         },
         resolve: {
             alias: aliases,
-            extensions: ['.js', '.ts', '.tsx', '.jsx']
+            extensions: ['.js', '.ts', '.tsx', '.jsx', '.css']
         },
         plugins: [new HtmlWebPack({
-            template: path.resolve(root, 'packages', name, 'index.html')
+            template: path.join(root, 'packages', name, 'index.html')
         })]
     };
 

@@ -1,8 +1,10 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { COOL_UTILS_VERSION } from 'cool-library-utils';
+import { VERSION } from 'cool-library';
+
+import './index.css';
 
 ReactDOM.render(
-    <p>{COOL_UTILS_VERSION}</p>,
+    <p>{VERSION}</p>,
     document.getElementById('root'),
 );
