@@ -5,7 +5,6 @@
     "repository": "https://github.com/haystackjs/journey.git",
     "author": "Steve Kite <steve@openland.com>",
     "license": "MIT",
-    "private": true,
     "main": "lib/main.js",
     "bin": {
         "journey": "bin/journey.js"
