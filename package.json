@@ -1,6 +1,6 @@
 {
     "name": "@haystackjs/journey",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "description": "Simple typescript library development",
     "repository": "https://github.com/haystackjs/journey.git",
     "author": "Steve Kite <steve@openland.com>",
@@ -10,7 +10,9 @@
         "journey": "bin/journey.js"
     },
     "scripts": {
-        "start": "ts-node ./src/main.ts --path ./sample/"
+        "start": "ts-node ./src/main.ts --path ./sample/",
+        "build": "tsc",
+        "release": "tsc && yarn publish"
     },
     "resolutions": {
         "react": "16.12.0",
