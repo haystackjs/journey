@@ -11,6 +11,8 @@ export function createTemplate(root: string, name: string) {
         "version": "1.0.0",
         "main": "lib/index.js",
         "typings": "lib/index.d.ts",
+        "module": "src/index.ts",
+        "peerDependencies": {},
         "dependencies": {}
     }, null, 2));
     fs.writeFileSync(path.join(root, 'packages', name, 'index.ts'), '');

@@ -3,13 +3,13 @@
         "jsx": "react",
         "paths": {
             "cool-library": [
-                "cool-library"
+                "cool-library/src"
             ],
             "cool-library-utils": [
-                "cool-library-utils"
+                "cool-library-utils/src"
             ],
             "cool-library-dev": [
-                "cool-library-dev"
+                "cool-library-dev/src"
             ]
         },
         "baseUrl": "./packages"

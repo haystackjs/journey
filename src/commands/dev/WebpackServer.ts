@@ -9,13 +9,13 @@ function loadWebpackConfig(root: string, name: string) {
     const journeyConfig = loadConfig(root);
     const aliases = {};
     for (let m of journeyConfig.modules) {
-        aliases[m] = path.resolve(root, 'packages', m);
+        aliases[m] = path.resolve(root, 'packages', m, 'src');
     }
 
     let webpackConfig: webpack.Configuration = {
         target: 'web',
         mode: 'development',
-        entry: path.resolve(root, 'packages', name, 'index.tsx'),
+        entry: path.resolve(root, 'packages', name, 'src', 'index.tsx'),
         output: {
             publicPath: '/'
         },
@@ -50,7 +50,7 @@ function loadWebpackConfig(root: string, name: string) {
             extensions: ['.js', '.ts', '.tsx', '.jsx', '.css']
         },
         plugins: [new HtmlWebPack({
-            template: path.join(root, 'packages', name, 'index.html')
+            template: path.join(root, 'packages', name, 'src', 'index.html')
         })]
     };
 

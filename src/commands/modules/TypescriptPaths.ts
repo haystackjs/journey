@@ -21,7 +21,7 @@ export function updateTypescriptPaths(root: string, config: ModulesConfig) {
     let compilerOptions = ts.compilerOptions || {};
     let paths = {};
     for (let m of config.modules) {
-        paths[m] = [m];
+        paths[m] = [path.join(m, 'src')];
     }
     compilerOptions = { ...compilerOptions, baseUrl: './packages', paths: paths };
     ts = { ...ts, compilerOptions };
