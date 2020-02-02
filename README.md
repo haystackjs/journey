@@ -2,14 +2,10 @@
 Journey is a toolkit for building, testing and publishing typescript libraries with monorepo support.
 
 ## Quick Start
-Instal `journey` as global binary:
-```bash
-yarn global add @haystackjs/journey
-```
 
-Create project directory and execute:
+Create new empty directory and execute:
 ```bash
-journey init my-awesome-project
+npx start-journey my-awesome-library
 ```
 
 #### Add Package
@@ -25,20 +21,20 @@ yarn journey remove my-awesome-library
 
 ### Start Dev Server
 ```bash
-yarn journey dev my-awesome-sample
+yarn dev
 ```
 
 ### Export static server
 ```bash
-yarn journey export my-awesome-sample
+yarn export
 ```
 
 ### Build
 ```bash
-yarn journey build
+yarn build
 ```
 
 ### Clean
 ```bash
-yarn journey clean
+yarn clean
 ```
