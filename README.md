@@ -30,7 +30,7 @@ yarn journey dev my-awesome-sample
 
 ### Export static server
 ```bash
-yarn journey dev my-awesome-sample
+yarn journey export my-awesome-sample
 ```
 
 ### Build
