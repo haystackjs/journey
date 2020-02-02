@@ -12,5 +12,6 @@
         "tslint-react-hooks": "^2.2.1",
         "typescript": "3.7.5"
     },
-    "dependencies": {}
+    "dependencies": {
+    }
 }

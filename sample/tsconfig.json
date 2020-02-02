@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
         "jsx": "react",
+        "declaration": true,
         "paths": {
             "cool-library": [
                 "cool-library/src"
@@ -12,6 +13,7 @@
                 "cool-library-dev/src"
             ]
         },
-        "baseUrl": "./packages"
+        "baseUrl": "./packages",
+        "outDir": "./output"
     }
 }

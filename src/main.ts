@@ -1,5 +1,5 @@
 import commander from 'commander';
-import { startDevServer, exportDevServer } from './commands/dev';
+import { startDevServer, exportDevServer, buildAll, cleanAll } from './commands/dev';
 import path from 'path';
 import { addPackage, removePackage, generateModules } from './commands/pkg';
 import { doInit } from './commands/init';
@@ -54,10 +54,24 @@ program.command('refresh')
         let p = (program as any).path ? path.resolve(((program as any).path as string)) : process.cwd();
         generateModules(p);
     });
+
+program.command('build')
+    .description('Build All')
+    .action(async () => {
+        let p = (program as any).path ? path.resolve(((program as any).path as string)) : process.cwd();
+        await buildAll(p);
+    });
+
+program.command('clean')
+    .description('Clean All')
+    .action(async () => {
+        let p = (program as any).path ? path.resolve(((program as any).path as string)) : process.cwd();
+        await cleanAll(p);
+    });
 // Parse Arguments
 program.parse(process.argv);
 
 // Default help
-if (program.args.length === 0) {
-    program.help();
-}
+// if (program.args.length === 0) {
+//     program.help();
+// }
