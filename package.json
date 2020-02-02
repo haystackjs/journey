@@ -1,6 +1,6 @@
 {
     "name": "@haystackjs/journey",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "description": "Simple typescript library development",
     "repository": "https://github.com/haystackjs/journey.git",
     "author": "Steve Kite <steve@openland.com>",
@@ -60,6 +60,7 @@
         "tslint-react": "^4.2.0",
         "tslint-react-hooks": "^2.2.1",
         "webpack": "^4.41.5",
-        "webpack-dev-server": "^3.10.2"
+        "webpack-dev-server": "^3.10.2",
+        "journey-tslint": "1.0.0"
     }
 }

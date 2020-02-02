@@ -4449,6 +4449,11 @@ jest@25.1.0:
     import-local "^3.0.2"
     jest-cli "^25.1.0"
 
+journey-tslint@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/journey-tslint/-/journey-tslint-1.0.0.tgz#5a6ac937db557a36c1d051c67f860ab158fdd227"
+  integrity sha512-W8/p0yuNTetojbOxVrb7/uG+0vdWOPwpqisVHcAJm17tVLQg5mGVmc+Enp5qur+mA6BSxXBLUmLDp1ivcVNEGg==
+
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
