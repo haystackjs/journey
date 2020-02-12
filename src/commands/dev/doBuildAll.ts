@@ -22,9 +22,9 @@ export async function doBuildAll(root: string) {
     console.log('Copying...');
     for (let m of journeyConfig.modules) {
         // Copy Sources
-        await new Promise((resolve) => ncp(path.join(root, 'packages', m, 'src'), path.join(root, 'packages', m, 'lib'), (e) => {
-            resolve();
-        }));
+        // await new Promise((resolve) => ncp(path.join(root, 'packages', m, 'src'), path.join(root, 'packages', m, 'lib'), (e) => {
+        //     resolve();
+        // }));
         // Copy compilation result
         await new Promise((resolve) => ncp(path.join(root, 'output', m, 'src'), path.join(root, 'packages', m, 'lib'), (e) => {
             resolve();

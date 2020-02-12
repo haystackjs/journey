@@ -1,6 +1,6 @@
 {
     "name": "@haystackjs/journey",
-    "version": "2.2.0",
+    "version": "2.2.1",
     "description": "Simple typescript library development",
     "repository": "https://github.com/haystackjs/journey.git",
     "author": "Steve Kite <steve@openland.com>",
